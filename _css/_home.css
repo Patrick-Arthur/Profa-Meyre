@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Satisfy&display=swap');
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+    color: #222222;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.superinfo-bg {
+    background: #268AFF;
+    color: white;
+
+}
+
+.superinfo {
+    max-width: 1078px;
+    margin: 0 auto;
+    display: flex;
+    padding: 8px;
+}
+
+.superinfo a {
+    color: white;
+    padding-left: 60px;
+}
+
+/*     HEADER     */
+
+header {
+    background: #0D1F33;
+    color: white;
+}
+
+.container {
+    max-width: 1078px;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-family: 'Satisfy', cursive;
+    font-size:2.25em ;
+    display: block;
+    padding-top: 8px;
+}
+
+header ul {
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+header ul li {
+    display: block;
+    padding: 24px  0 24px 30px;
+}
