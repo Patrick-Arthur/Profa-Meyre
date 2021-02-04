@@ -53,7 +53,7 @@ header {
 }
 
 .container {
-    max-width: 1078px;
+    max-width: 1260px;
     margin: 0 auto;
     display: flex;
     align-content: center;
@@ -61,6 +61,10 @@ header {
     padding-left: 10px;
     padding-right: 10px;
     flex-wrap: wrap;
+}
+section {
+    padding-top: 45px;
+    padding-bottom: 90px;
 }
 
 header .logo {
@@ -77,5 +81,483 @@ header ul {
 
 header ul li {
     display: block;
-    padding: 24px  0 24px 30px;
+    padding: 24px 0;
+    margin-left: 30px;
 }
+header ul li a {
+    font-weight: bold;
+}
+header ul li:hover {
+    border-bottom: 3px solid #E35C0B;
+}
+
+
+/*     MAIN     */
+
+.intro {
+    background: linear-gradient(90.12deg, #003BB2 42.75%, #0069E4 69.21%);
+}
+
+.container-intro {
+    padding: 30px 10px 60px 10px;
+    position: relative;
+}
+
+.intro p {
+    max-width: 300px;
+    text-align: right;
+    color: white;
+    font-size:1.5em;
+    margin-bottom: 140px;
+    position: relative;
+    right: -70px;
+    font-style: italic;
+
+}
+.intro span {
+    font-size: 14px;
+    line-height: 400%;
+    font-style: italic;
+}
+
+
+.intro h1 {
+    font-family:'Merriweather', serif;
+    font-size: 4.5em;
+    color: white;
+    margin-top: 160px;
+}
+
+
+.botao-intro a {
+    width: 295px;
+    font-size: 1.5em;
+    background: linear-gradient(0deg, #E35C0B 31.97%, #FF7826 100%);
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    box-shadow: 0px 4px 4px #263C53;
+    text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .intro h1 {
+        margin-top: 30px;
+        font-size: 48px;
+        padding-bottom: 30px;
+    }
+    .intro p {
+        font-size: 1.125em;
+        text-align: left;
+        left: 0px;
+        margin-bottom: 30px;
+    }
+    .item2 {
+        order: 3;
+    }
+
+    .item1 {
+        order: 1;
+        margin-bottom: 15px;
+        padding: 0 17px;
+    }
+    .item3 {
+        order: 2;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+    .mini-container {
+        max-width:617px;
+        padding: 0 15px;
+    }
+    
+
+}
+
+/*     SOBRE    */
+
+
+
+.sobre-text {
+    max-width: 540px;
+}
+.sobre-text p {
+    font-size: 1.125em;
+    font-family: 'montserrat', sans-serif;
+    line-height: 32px;
+    color: #0D1F33;
+}
+
+
+.titulo {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    font-family: "Merriweather", serif;
+    font-size:2.25em;
+    font-weight: bold;
+    color: #0D1F33;
+    padding-bottom: 30px;
+}
+
+.titulo div {
+    width: 60px;
+    height: 3px;
+    background: #0D1F33;
+    margin: 0 15px;
+    position: relative;
+    top: 32px;
+}
+
+/*     Parcerias   */
+
+.parcerias {
+    background: #0D1F33;
+}
+.parcerias .titulo h2 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.parcerias .titulo div {
+    width: 60px;
+    height: 3px;
+    background: white;
+    margin: 0 15px;
+    position: relative;
+    top: 32px;
+}
+
+.parcerias ul li {
+    max-width: 300px;
+}
+
+/*    SERVIÇOS    */
+
+.serviços {
+    background: #EFF4F9;
+}
+
+.serviços img {
+    margin: 15px auto 15px auto;
+}
+
+.serviços h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    max-width: 240px;
+    text-align: left;
+    margin: 0 auto;
+    border-top: 3px solid #0d1f33;
+    border-bottom: 3px solid #0d1f33;
+    padding: 5px 0;
+}
+
+
+.serviços .item1 {
+    flex: 0 1 380px;
+    background: #E3C10B;
+    border: 3px solid #0D1F33;
+    min-width: 280px;
+    box-shadow: 0px 6px 6px rgba(187, 204, 221, 0.4);
+}
+
+.serviços .item1 h3 {
+    max-width: 260px;
+}
+
+
+
+.serviços .item3 {
+    flex: 0 1 380px;
+    background: #FF7826;
+    border: 3px solid #0D1F33;
+    min-width: 280px;
+    box-shadow: 0px 6px 6px rgba(187, 204, 221, 0.4);
+}
+.serviços ul {
+    display: block;
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.serviços .item1 ul {
+    display: block;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+.serviços .item3 ul {
+    display: block;
+    max-width: 275px;
+    margin: 0 auto;
+    padding-bottom: 10;
+}
+.serviços ul li {
+    display:block;
+    font-size: 1.125em;
+    padding: 0 5px;
+    line-height: 170%;
+}
+
+.serviços ul li::before {
+    content: url('../_imagens/fi-rs-check\ 5.svg');
+    padding-right: 5px;
+}
+
+.serviços .item1 p {
+    margin: 0 auto;
+    max-width: 240px;
+    color: #E35C0B;
+    padding-bottom: 20px;
+}
+
+.serviços .item3 p {
+    margin: 0 auto;
+    max-width: 240px;
+    color: #E3C10B;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.item2 div {
+    flex: 0 1 300px;
+    background: #268AFF;
+    border: 3px solid #0D1F33;
+    font-weight: 500;
+    align-self: flex-start;
+    padding: 0 30px;
+    min-width: 280px;
+    box-shadow: 0px 6px 6px rgba(187, 204, 221, 0.4);
+}
+
+
+
+.item2 a {
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 225px;
+    background: #0D1F33;
+    color: white;
+    border-bottom: 3px solid #E35C0B;
+    padding: 15px 0;
+    font-family: "Merriwheater", serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    top: 45px;
+    box-shadow: 0px 8px 8px rgba(187, 204, 221, 0.6);
+}
+
+
+/*    HABILIDADES    */
+
+.habilidades .container {
+    flex-wrap: nowrap;
+}
+
+.mini-container {
+    width: 617px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mini-item {
+    flex: 1 1 260px;
+    border: 3px solid #004696;
+    padding: 15px 35px 30px 35px;
+    margin: 0 20px 20px 0;
+    box-shadow: 0px 6px 6px rgba(187, 204, 221, 0.4);
+}
+
+.hab-img {
+    max-width: 100%;
+    flex: 0 1 auto;
+    display: flex;
+}
+
+.hab-container {
+    margin: 0 auto;
+}
+
+.mini-item h3 {
+    max-width: 270px;
+    font-size: 1.5em;
+    color:#003BB2;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.mini-item p {
+    font-size: 1.125em;
+    color: #0D1F33;
+    max-width: 220px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+}
+
+.mini-item h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FF7826;
+    margin: 5px auto;
+} 
+
+.mini-container:last-child h3, .mini-container:last-child p {
+    max-width: 460px;
+}
+
+.hab-img {
+    position: relative;
+    color: #BBCCDD;
+}
+.hab-img a {
+    color: #99AABB;
+}
+
+.uicons {
+    position: relative;
+    right: 0px !important;
+    margin-right: 0;
+    padding-right: 0;
+    bottom: 0;
+    align-self: flex-end;
+}
+
+@media (max-width: 900px) {
+    .habilidades .container {
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+
+    .hab-img {
+        display: none;
+    }
+
+    .habilidades .titulo {
+        font-size:2em ;
+}
+}
+
+@media (max-width: 600px) {
+
+    .hab-container .mini-container {
+        flex-direction: row;
+        align-items:center;
+        align-content:center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        max-width: 350px;
+
+    }
+    .hab-container h2 {
+        font-size: 1.25em;
+    }
+    .mini-item {
+        flex: 0 0 300px;
+    }
+    .titulo div {
+        width: 30px;
+    }
+}
+
+/*     LIVRO     */
+
+.livro {
+    background: #0D1F33;
+}
+
+.livro .titulo {
+    color: white;
+}
+
+.livro .titulo div {
+    background: white;
+}
+
+
+/*    CONTATO    */
+
+.contato {
+    background: #EFF4F9;
+}
+
+.contato p {
+    text-align: center;
+    max-width: 460px;
+    margin: 0 auto;
+    color: #0D1F33;
+    font-size: 1.125em;
+    line-height: 22px;
+    margin-bottom:60px ;
+}
+
+.contato p span {
+    color: #E35C0B;
+    letter-spacing: 0.08em;
+}
+
+.form {
+    max-width: 380px;
+    margin-left: 160px;
+}
+
+.form label {
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    font-size: 1.125em;
+    color: #0D1F33;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.form input {
+    width: 380px;
+    height: 30px;
+    border: 2px solid #99AABB;
+}
+
+.form input.mensagem {
+    height: 115px;
+}
+
+.botao-form {
+    width: 225px;
+    background: #0D1F33;
+    color: white;
+    font-size: 1.25em;
+}
+
+input::placeholder {
+    color:#99AABB;
+}
+
+
+
+
+
+
