@@ -38,12 +38,16 @@ img {
     margin: 0 auto;
     display: flex;
     padding: 8px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .superinfo a {
     color: white;
     display: block;
+
+}
+.superinfo p {
+    margin-right: 180px;
 }
 
 
@@ -165,6 +169,8 @@ header ul li:hover {
     }
     .item2 {
         order: 3;
+        margin:0 auto;
+        padding: 0 10px;
     }
 
     .item1 {
@@ -293,19 +299,20 @@ header ul li:hover {
     display: block;
     max-width: 240px;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 10px 0 30px 0;
 }
 .serviços .item1 ul {
     display: block;
     max-width: 260px;
     margin: 0 auto;
+    padding-bottom: 45px;
 }
 
 .serviços .item3 ul {
     display: block;
     max-width: 275px;
     margin: 0 auto;
-    padding-bottom: 10;
+
 }
 .serviços ul li {
     display:block;
@@ -323,7 +330,6 @@ header ul li:hover {
     margin: 0 auto;
     max-width: 240px;
     color: #E35C0B;
-    padding-bottom: 20px;
 }
 
 .serviços .item3 p {
@@ -332,30 +338,37 @@ header ul li:hover {
     color: #E3C10B;
     margin-top: 0;
     padding-top: 0;
-    padding-bottom: 30px;
 }
 
+
 .item2 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.item2 div {
-    flex: 0 1 300px;
+    flex: 0 1 380px;
     background: #268AFF;
     border: 3px solid #0D1F33;
     font-weight: 500;
     align-self: flex-start;
-    padding: 0 30px;
-    min-width: 280px;
+    padding: 0 30px 30px 0;
+
     box-shadow: 0px 6px 6px rgba(187, 204, 221, 0.4);
+}
+
+.item2 h3 {
+    margin: 0 auto;
+    padding-right: 0;
+}
+
+.item2 ul {
+    display: block;
+    max-width: 275px;
+    margin: 0 auto;
+    padding-bottom: 10;
+    margin-left: 50px;
+    padding-left: 0;
 }
 
 
 
-.item2 a {
+.botao {
     text-align: center;
     display: block;
     position: relative;
@@ -420,6 +433,7 @@ header ul li:hover {
     max-width: 220px;
     margin: 0 auto;
     padding-bottom: 0px;
+    text-align: center;
 }
 
 .mini-item h3::after {
@@ -465,9 +479,8 @@ header ul li:hover {
 
     .habilidades .titulo {
         font-size:2em ;
+    }
 }
-}
-
 @media (max-width: 600px) {
 
     .hab-container .mini-container {
@@ -494,6 +507,7 @@ header ul li:hover {
 
 .livro {
     background: #0D1F33;
+    padding-bottom: 30px;
 }
 
 .livro .titulo {
@@ -502,6 +516,33 @@ header ul li:hover {
 
 .livro .titulo div {
     background: white;
+    margin-bottom: 0;
+}
+
+.livro .container {
+    justify-content: center;
+    padding-bottom: 0;
+}
+.livro img {
+    width: 165px;
+    height: 235px;
+    position: relative;
+    margin: 5px 10px;
+    z-index: 3;
+}
+
+.livro img:hover {
+    transform: scale(3);
+    transition: 1s; 
+    margin: 0px 180px;
+    z-index: 3;
+}
+
+@media (max-width: 600px) {
+    .livro img:hover {
+        transform: scale(2);
+        margin: 120px;
+    }
 }
 
 
@@ -509,6 +550,9 @@ header ul li:hover {
 
 .contato {
     background: #EFF4F9;
+}
+.contato .titulo {
+    z-index: 1;
 }
 
 .contato p {
@@ -529,7 +573,7 @@ header ul li:hover {
 .form {
     max-width: 380px;
     margin-left: 160px;
-    margin-right:90px;
+    margin-right:70px;
 }
 
 .form label {
@@ -548,10 +592,14 @@ header ul li:hover {
     margin-bottom: 15px;
 }
 
-.form input.mensagem {
+textarea {
     height: 115px;
     margin-bottom: 0px;
+    width: 380px;
+    resize: none;
 }
+
+
 
 .botao-form {
     width: 225px;
@@ -570,8 +618,9 @@ input::placeholder {
     color:#99AABB;
 }
 
-.file {
+input.file {
     font-size: 14px !important;
+    border: none;
 }
 
 .contato .container {
@@ -604,7 +653,7 @@ input::placeholder {
 
 .dados {
     align-self:flex-start;
-    margin-left:90px;
+    margin-left:70px;
 }
 .dados h4 {
     font-family:'Merriweather', serif;
@@ -615,16 +664,15 @@ input::placeholder {
     text-transform: uppercase;
 }
 
-.dados p, .dados a {
+.dados>a {
     font-family: 'Montserrat', sans-serif;
     font-size:0.875em;
     color: #0D1F33;
     margin: 5px 0;
+    text-align: left;
+    display: block;
 }
 
-.dados a {
-    margin-bottom: 30px;
-}
 
 @media (max-width: 1100px) {
     .dados {
@@ -684,4 +732,28 @@ footer .container {
     box-shadow: 0px 4px 4px 4px rgba(13, 31, 51, 0.4);
     transform: scale(1.2);
     padding: 15px;
+}
+
+footer span {
+    color: #BBCCDD;
+}
+footer span a {
+    color: #99AABB;
+}
+
+.redes-sociais li {
+    display: inline-block;
+}
+.redes-sociais img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.ref {
+    margin-top: 30px;
+    color: #BBCCDD;
+}
+
+.ref a {
+    color: #99AABB;
 }
