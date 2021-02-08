@@ -185,25 +185,26 @@
             <div class="container">
 
                 <div class="form">
-                    <form action="emailto:profameyre@hotmail.com">
+                    <form action="../envia_fale.php" method="post" name="form">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="Digite seu nome" required>
+                        <input type="text" id="nome" placeholder="Digite seu nome" name="nome" required>
 
                         <label for="email">Email</label>
-                        <input type="text" id="email" placeholder="Digite seu email" required>
+                        <input type="email" id="email" placeholder="Digite seu email" name="email" required>
 
                         <label for="assunto">Assunto</label>
-                        <input type="text" placeholder="Digite o assunto" id="assunto">
+                        <input type="text" placeholder="Digite o assunto" id="assunto" name="assunto">
 
                         <label for="file">Anexe seu arquivo</label>
-                        <input type="file" id="file" class="file" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.pdf,.jpg,.jpeg,.pptx" multiple>
+                        <input type="file" id="file" class="file" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.pdf,.jpg,.jpeg,.pptx" name="file" multiple>
                         
 
                         <label for="mensagem">Mensagem</label>
                         <textarea name="mensagem" id="mensagem" cols="60" rows="30" required></textarea>
 
+                        <input class="botao-form" name="submit" type="submit">
                     </form>
-                    <button class="botao-form" href="https://www.facebook.com/meyre.barbosadasilva">Enviar</button>
+                    
                 </div>
 
                 <div class="ou">

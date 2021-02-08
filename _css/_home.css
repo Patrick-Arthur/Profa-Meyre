@@ -88,14 +88,17 @@ header ul {
 
 header ul li {
     display: block;
-    padding: 24px 0;
     margin-left: 30px;
 }
 header ul li a {
     font-weight: bold;
+    display: block;
+    padding: 24px 0;
 }
-header ul li:hover {
-    border-bottom: 3px solid #E35C0B;
+
+header ul li a:hover {
+    color: #E35C0B;
+    border-bottom: 3px solid #E35C0b;
 }
 
 
@@ -601,7 +604,8 @@ textarea {
 
 
 
-.botao-form {
+input.botao-form {
+    height: 60px;
     width: 225px;
     background: #0D1F33;
     color: white;
@@ -612,6 +616,7 @@ textarea {
     border-style: none;
     box-shadow: 0px 8px 8px rgba(187, 204, 221, 0.6), 0px 4px 4px rgba(187, 204, 221, 0.4);
     cursor: pointer;
+    margin-top: 15px;
 }
 
 input::placeholder {
