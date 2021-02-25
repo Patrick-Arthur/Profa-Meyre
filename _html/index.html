@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="../_css/_home.css">
     <link rel="stylesheet" type="text/css" href="../_css/_normalize.css">
-    <script src="../_script/script.js"></script>
+    <script>document.documentElement.className += 'js'</script>
     <title>Profa Meyre</title>
 </head>
 
@@ -17,7 +17,7 @@
     </div>
 
     <header class="header">
-        <div class="container">
+        <div class="container js-menu">
             <a href="" class="logo" id="logo">Profª Meyre</a>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
@@ -45,7 +45,7 @@
     </main>
 
     <section class="sobre container" id="sobre">
-        <div>
+        <div class="js-scroll">
             <img src="../_imagens/Mask Group.jpg" alt="">
         </div>
         <div class="sobre-text">
@@ -65,7 +65,7 @@
             <div></div>
         </div>
         <div>
-            <ul class="container">
+            <ul class="container js-scroll">
                 <li><img src="../_imagens/Screenshot_1.png" alt=""></li>
                 <li><img src="../_imagens/Screenshot_1.png" alt=""></li>
                 <li><img src="../_imagens/Screenshot_1.png" alt=""></li>
@@ -80,7 +80,7 @@
             <h2>Serviços</h2>
             <div></div>
         </div>
-        <div class="container">
+        <div class="container js-scroll">
             <div class="item1">
                 <img src="../_imagens/Vector (2).svg" alt="">
                 <h3>Apoio à elaboração de textos, como:</h3>
@@ -126,7 +126,7 @@
                     <h2>Habilidades</h2>
                     <div></div>
                 </div>
-                <div class="mini-container">
+                <div class="mini-container js-scroll">
                     <div class="mini-item">
                         <h3>Revisão ortográfica</h3>
                         <p>Conhecimento amplo da grámatica da lingua portuguesa, assim como as novas normas de acentuação</p>
@@ -183,7 +183,7 @@
             Cada orçamento é <span>personalizado</span> de acordo
             com o material revisado e prazo de entrega</p>
 
-            <div class="container">
+            <div class="container js-scroll">
 
                 <div class="form">
                     <form action="../envia_fale.php" method="post" name="form">
@@ -243,6 +243,9 @@
             </div>
 
     </footer>
+
+
+    <script src="../_script/script.js"></script>
 
 </body>
     
